@@ -123,6 +123,7 @@ nav{
 #home_header {
     font-size: 5em;
     text-align: center;
+    padding-right: .5em;
     top: 30%;
     position:absolute;
 }
