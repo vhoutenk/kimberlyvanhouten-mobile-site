@@ -1,0 +1,207 @@
+﻿body {
+    font-family: Garamond;
+    font-size: 12pt;
+    background-color: #FAF9F6; 
+}
+body div{
+    padding: 10px;
+}
+
+h1{
+    font-family:'Gill Sans';
+    font-size: 50pt;
+    color:#3d5349;
+    font-weight: 900;
+}
+
+h2{
+    font-family:'Gill Sans';
+    font-size: 25pt;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Gill Sans';
+    font-size: 20pt;
+    padding-bottom: 10pt;
+}
+
+/*links*/
+a{
+    color: black;
+}
+
+a:visited{
+    color:black;
+}
+
+a:hover{
+    color: #829e92;
+}
+
+
+/*heading*/
+
+header {
+    position: sticky;
+    top:0px;
+    /*F2F2EA*/
+    background-color: #FAF9F6;
+    display:flex;
+    justify-content: space-between;
+    /*so that the header goes behind the image in the scrolling effect*/
+    z-index: 2;
+}
+
+header p {
+    font-family: 'Gill Sans';
+    font-size: 10pt;
+}
+
+nav{
+    text-align: left;
+ }
+
+
+ /*dropdown menu*/
+ .dropdown{
+     position: relative;
+     display: inline-block;
+ }
+
+.dropdownContent li:hover{
+    background-color: #3d5349;
+    color: #FAF9F6;
+    text-transform:uppercase;
+}
+ .dropdownContent{
+    display: none;
+    position: sticky;
+    padding: 10px;
+    min-width: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+ } 
+
+.dropdownContent a{
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.show{
+    display:block;
+}
+
+
+.currentPage{
+    background-color: #3d5349;
+    color: white;
+    text-transform:uppercase; 
+}
+
+/*text sections*/
+.body_text{
+    padding: 4em;
+    line-height: 2em;
+    font-size: 14pt;
+}
+
+/*just for the home page*/
+#intro_bio{
+    background: rgba(61,83,73,.7);
+}
+
+#project_list{
+    font-size: 14pt;
+    line-height: 2em;
+    padding: 4em 4em 8em 4em;
+}
+
+/*photo and title for just the home page*/
+
+#home_header {
+    font-size: 90px;
+    text-align: center;
+    top: 30%;
+    position:absolute;
+}
+
+.nameHeading {
+    background: url(../images/home_background.jpg) no-repeat;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    height: 700px; /* Parallax effect */
+}
+
+/*for the about page*/
+#resumepdf{
+   width:100%;
+   height: 700px;
+}
+ 
+/*for the connect page*/
+form{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 200px;
+}
+
+input[type=text] {
+    font-family: 'Garamond';
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3d5349;
+    color: #FAF9F6;
+  }
+/*for the work page*/
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(5,auto);
+    align-items: center;
+}
+.container p{
+    font-family: 'Gill Sans';
+    font-size: 15pt;
+}
+
+
+/*footer*/
+footer{
+    display:flex;
+    justify-content: center;
+    /*background-color: #9cb8ab;*/
+    background-color: #FAF9F6;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,2);
+    padding: 10px;
+   
+}
+
+footer img{
+
+    width:30px;
+    height: auto;
+    margin: 10px;
+}
+
+
+
+
+
+@media screen and (min-width: 850px){
+    #home_header {
+        font-size: 120px;
+        text-align: center;
+        top: 40%;
+        left: 10%;
+        right:10%;
+        position:absolute;
+    }
+}
+    
