@@ -121,7 +121,7 @@ nav{
 /*photo and title for just the home page*/
 
 #home_header {
-    font-size: 90px;
+    font-size: 5em;
     text-align: center;
     top: 30%;
     position:absolute;
