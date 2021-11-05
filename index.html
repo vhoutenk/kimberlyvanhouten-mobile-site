@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/KVH_favicon.png" />
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title> KIMBERLY VAN HOUTEN</title>
+</head>
+<body>
+    <!-- header is repeated content -->
+    <header>
+        <!-- Logo that links to homepage -->
+        <div class=mainLogo>
+            <a href=index.html>
+                <img src="images/KVH_logo.png" alt="KVH" id="logo_initial">
+            </a>
+                   <!-- text -->
+        <p>Portfolio by Kimberly Van Houten </p>
+
+        </div>
+
+        <nav>
+            <!-- nav drop down -->
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropBtn"><img src="images/dropdown.png" alt="dropdown icon"></button>
+                <ul class="dropdownContent" id="myDropdown">
+                    <li class="nav_item" class="currentPage"><a href="index.html">Home</a></li>
+                    <li class="nav_item"><a href="about.html">About</a></li>
+                    <li class="nav_item"><a href="work.html">Work</a></li>
+                    <li class="nav_item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropBtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+    </script>
+
+
+    <!-- Large image that is sticky and maybe a little blurred-->
+    <div class="nameHeading">
+        <!-- <img src="images/home_background.jpg" alt="background">-->
+        <h1 id="home_header">Kimberly Van Houten</h1>
+    </div>
+
+        <p class="body_text" id="intro_bio">
+            Hello, I am Kimberly and my pronouns are she/her <a target="blank" href="https://lgbtlifecenter.org/pronouns/">[To read more about pronouns].</a>.  I am currently working towards a B.S of Architecture
+            at the University of Michigan Taubman College.   A few fun facts about me: I love classic
+            black and white films, I am an ENFJ, I think random conversations with strangers
+            is one of the best experiences and I am currently learning how to play the piano.
+            <a href="about.html">Read More</a>
+        </p>
+
+    <div id="project_list">
+        <h2> Project list</h2>
+        <a href="work_ug1p1.html">Case Study: House on the Stream</a>
+        -
+        <a href="work_ug1p2.html">Looking Inward: Adding a Room to the House on the Stream</a>
+        -
+        <a href="work_art.html">Personal Artwork</a>
+        -
+        <a href="work_211.html">Setting the Scene: A Dining Room</a>
+        -
+        <a href="work_218p1.html">Translations: From 2D to 3D and from Volumes to Voids</a>
+    </div>
+    <!-- footer is repeated content -->
+    <footer>
+        <!-- social media icon links -->
+        <a target="blank" href="https://www.linkedin.com/in/kimberly-van-houten/">
+            <img src="images/linkedin_icon.png" alt="linkedin icon">
+        </a>
+
+        <a target="blank" href="mailto:vhoutenk@umich.edu">
+            <img src="images/email_icon.png" alt="email icon">
+        </a>
+    </footer>
+
+</body>
+</html>
