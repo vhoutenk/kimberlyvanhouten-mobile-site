@@ -36,31 +36,31 @@
             </div>
         </nav>
     </header>
-
-    <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(e) {
-          if (!e.target.matches('.dropBtn')) {
-          var myDropdown = document.getElementById("myDropdown");
-            if (myDropdown.classList.contains('show')) {
-              myDropdown.classList.remove('show');
+    <main>
+        <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
             }
-          }
-        }
-    </script>
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (e) {
+                if (!e.target.matches('.dropBtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
 
 
-    <!-- Large image that is sticky and maybe a little blurred-->
-    <div class="nameHeading">
-        <!-- <img src="images/home_background.jpg" alt="background">-->
-        <h1 id="home_header">Kimberly Van Houten</h1>
-    </div>
+        <!-- Large image that is sticky and maybe a little blurred-->
+        <div class="nameHeading">
+            <!-- <img src="images/home_background.jpg" alt="background">-->
+            <h1 id="home_header">Kimberly Van Houten</h1>
+        </div>
 
         <p class="body_text" id="intro_bio">
             Hello, I am Kimberly and my pronouns are she/her <a target="blank" href="https://lgbtlifecenter.org/pronouns/">[To read more about pronouns].</a>.  I am currently working towards a B.S of Architecture
@@ -70,18 +70,20 @@
             <a href="about.html">Read More</a>
         </p>
 
-    <div id="project_list">
-        <h2> Project list</h2>
-        <a href="work_ug1p1.html">Case Study: House on the Stream</a>
-        -
-        <a href="work_ug1p2.html">Looking Inward: Adding a Room to the House on the Stream</a>
-        -
-        <a href="work_art.html">Personal Artwork</a>
-        -
-        <a href="work_211.html">Setting the Scene: A Dining Room</a>
-        -
-        <a href="work_218p1.html">Translations: From 2D to 3D and from Volumes to Voids</a>
-    </div>
+        <div id="project_list">
+            <h2> Project list</h2>
+            <a href="work_ug1p1.html">Case Study: House on the Stream</a>
+            -
+            <a href="work_ug1p2.html">Looking Inward: Adding a Room to the House on the Stream</a>
+            -
+            <a href="work_art.html">Personal Artwork</a>
+            -
+            <a href="work_211.html">Setting the Scene: A Dining Room</a>
+            -
+            <a href="work_218p1.html">Translations: From 2D to 3D and from Volumes to Voids</a>
+        </div>
+
+    </main>
     <!-- footer is repeated content -->
     <footer>
         <!-- social media icon links -->
